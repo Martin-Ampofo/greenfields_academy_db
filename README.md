@@ -26,11 +26,35 @@ greenfields_academy_db/
 
 ---
 
-## ⚙️ Setup Instructions
+## ⚙️ Setup Instructions (XAMPP + phpMyAdmin)
 
-1. Create the database and tables:
-   SOURCE schema/create_tables.sql;
-2. Load sample data:
-   SOURCE data/sample_data.sql;
-3. Run example queries:
-   SOURCE queries/reports.sql;
+### 1. Start XAMPP
+- Open **XAMPP Control Panel**  
+- Click **Start** for **Apache** and **MySQL**
+
+### 2. Open phpMyAdmin
+- In your browser, go to:
+http://localhost/phpmyadmin
+
+### 3. Create Database
+- Click **Databases** in the top menu  
+- Enter `greenfields_academy` as the database name  
+- Click **Create**
+
+### 4. Import Schema
+- Select the `greenfields_academy` database  
+- Go to the **Import** tab  
+- Choose file → select `schema/create_tables.sql`  
+- Click **Go**  
+
+### 5. Load Sample Data
+- Still inside `greenfields_academy`  
+- Go to **Import** again  
+- Choose file → select `data/sample_data.sql`  
+- Click **Go**  
+
+### 6. Run Queries
+- Select the `greenfields_academy` database  
+- Click the **SQL** tab  
+- Copy and paste queries from `queries/reports.sql` (e.g., fee defaulters, top students, attendance trends)  
+- Click **Go** to see the results  
